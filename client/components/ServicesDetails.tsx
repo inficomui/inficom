@@ -11,7 +11,8 @@ import Header from './Header';
 import { services } from '@/lib/servicesData';
 import { getIcon } from '@/lib/IconsRegistery';
 import { useGetServiceQuery } from '@/redux/apis/servicesApi';
-import { MountLoader } from '@/app/page';
+import { MountLoader } from './mini/MountLoader';
+// import { MountLoader } from '@/app/page';
 
 // for dark theme prev
 // const DETAIL_SERVICES_BG_COLOR = "#1c1e34"

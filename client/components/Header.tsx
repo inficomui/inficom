@@ -172,15 +172,19 @@ const headerTop = (showBanner ? bannerH : 0) + 16; // px
 </div>
 
 
-  <header
-  className={`fixed top-4 left-1/2 z-50 w-[92%] max-w-7xl transform -translate-x-1/2 
-    transition-all duration-300 rounded-2xl border backdrop-blur-md     ${showBanner ? "top-24 lg:top-12" : "top-4"} 
+ <header
+  className={`fixed left-1/2 z-50 w-[92%] max-w-7xl transform -translate-x-1/2 
+    transition-all duration-300 rounded-2xl border backdrop-blur-md
     ${isScrolled
       ? "bg-white/70 border-white/40 shadow-lg"
       : "bg-white/10 border-white/10 shadow-sm"
-    } `}   // 👈 margin-bottom
-  style={{ WebkitBackdropFilter: "blur(12px)" }}
+    }`}
+  style={{
+    WebkitBackdropFilter: "blur(12px)",
+    top: `${headerTop}px`, // 👈 dynamic offset (banner + 16px gap)
+  }}
 >
+
       
 
   <div className="px-6 sm:px-8 ">

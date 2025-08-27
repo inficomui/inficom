@@ -89,7 +89,7 @@ export default function AdminDashboard() {
     },
     { 
       name: 'Team Members', 
-      value: teamData?.data?.length?.toString() || '0', 
+      value: teamData?.length?.toString() || '0', 
       icon: Users, 
       change: '0%', 
       changeType: 'neutral',

@@ -44,7 +44,7 @@ export default function MiniServicesSection({ items }: { items: ServiceDTO[] }) 
 
         {/* Grid */}
         <div className="grid gap-6 sm:gap-7 md:grid-cols-2 lg:grid-cols-3">
-          {items.map((s, i) => (
+          {items && items.map((s, i) => (
             <motion.article
               key={s.title + i}
               className="group relative overflow-hidden rounded-2xl border bg-white/80 shadow-md backdrop-blur-sm"

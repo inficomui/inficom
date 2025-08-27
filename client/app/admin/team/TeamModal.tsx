@@ -20,6 +20,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { cn } from '@/lib/utils'; // optional: if you have a classnames helper
+import Image from 'next/image';
 
 const teamMemberSchema = z.object({
   name: z.string().min(1, 'Name is required'),
@@ -299,7 +300,9 @@ export default function TeamModal({ isOpen, onClose, member }: TeamModalProps) {
                     Preview
                   </p>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image 
+                    width={100} 
+                    height={100}
                     src={preview}
                     alt="Preview"
                     className="h-24 w-24 rounded-full object-cover border shadow-sm"

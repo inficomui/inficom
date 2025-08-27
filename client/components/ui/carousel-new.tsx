@@ -15,7 +15,7 @@ function MemberCard({ m }: { m: TeamMember }) {
       <div className="mx-auto h-36 w-36 sm:h-40 sm:w-40 rounded-lg overflow-hidden bg-black/20">
         {typeof m.image === "string" ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={m.image} alt={m.name} className="h-full w-full object-contain" />
+          <Image width={100} height={100} src={m.image} alt={m.name} className="h-full w-full object-contain" />
         ) : (
           <Image
             src={m.image}

@@ -20,11 +20,32 @@ export const metadata: Metadata = {
   authors: [{ name: 'InficomSolutions' }],
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
-  openGraph: {
-    title: 'InficomSolutions - Leading IT Solutions Provider',
-    description: 'Transform your business with innovative technology solutions and exceptional IT services.',
-    type: 'website',
-    locale: 'en_US',
+ openGraph: {
+  title: "Inficom Solutions - Leading IT Solutions & Software Development Company",
+  description: "Web, mobile, cloud, cybersecurity & custom software development in Aurangabad (Chhatrapati Sambhajinagar).",
+  url: "https://inficomsolutions.in",
+  siteName: "Inficom Solutions",
+  images: [
+    {
+      url: "https://inficomsolutions.in/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Inficom Solutions - IT Services",
+    },
+  ],
+  locale: "en_IN",
+  type: "website",
+},
+twitter: {
+  card: "summary_large_image",
+  title: "Inficom Solutions - IT Company in Aurangabad",
+  description: "Software & IT services including web, mobile, cloud, cybersecurity, and more.",
+  images: ["https://inficomsolutions.in/og-image.jpg"],
+  creator: "@inficomsolutio",
+},
+ metadataBase: new URL("https://inficomsolutions.in"),
+  alternates: {
+    canonical: "https://inficomsolutions.in",
   },
 };
 

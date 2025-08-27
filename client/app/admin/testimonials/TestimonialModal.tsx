@@ -17,6 +17,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import Image from 'next/image';
 
 /**
  * Zod schema:
@@ -298,7 +299,7 @@ export default function TestimonialModal({ isOpen, onClose, testimonial }: Testi
                   {/* Preview: prefer newly selected file; otherwise show existing (edit mode) */}
                   {previewUrl ? (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img
+                    <Image width={100} height={100}
                       src={previewUrl}
                       alt="Preview"
                       className="mt-2 h-16 w-16 rounded-full object-cover border"
